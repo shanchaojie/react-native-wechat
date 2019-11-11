@@ -4,7 +4,7 @@
 
 [React Native] bridging library that integrates WeChat SDKs:
 
-- [x] iOS SDK 1.7.2
+- [x] iOS SDK 1.8.2
 - [x] Android SDK 221
 
 [react-native-wechat] has the following tracking data in the open source world:
@@ -59,11 +59,6 @@ This method is only available on iOS.
 
 Check if the WeChat app is installed on the device.
 
-#### isWXAppSupportApi()
-
-- returns {Boolean} Contains the result.
-
-Check if wechat support open url.
 
 #### getApiVersion()
 
@@ -95,6 +90,12 @@ following fields:
 | url     | String | The URL string                      |
 | lang    | String | The user language                   |
 | country | String | The user country                    |
+
+### launchMini()
+- `userName` {String} - 拉起的小程序的username
+- `miniProgramType` {Integer} - 拉起小程序的类型. 0-正式版 1-开发版 2-体验版
+- `path` {String} - 拉起小程序页面的可带参路径，不填默认拉起小程序首页
+- 调起小程序功能
 
 #### class `ShareMetadata`
 
